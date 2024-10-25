@@ -5,7 +5,7 @@ export default function InputForm() {
                 <div className="flex mb-12 justify-center items-center">
                     <img className="max-w-32" src="images.png"/>
                 </div>
-                <h1 className="font-bold text-center text-xl my-5 text-black">Create Your Account</h1>
+                <h1 className="font-bold text-center text-xl my-5 text-black">Input Contact</h1>
                 <form>
                     <div className="space-y-6">
                         <div>
@@ -14,7 +14,7 @@ export default function InputForm() {
                                 name="name"
                                 type="text"
                                 className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                                placeholder="Enter your name"
+                                placeholder="Enter name"
                             />
                         </div>
                         <div>
@@ -23,7 +23,7 @@ export default function InputForm() {
                                 name="email"
                                 type="email"
                                 className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                                placeholder="Enter your email"
+                                placeholder="Enter email"
                             />
                         </div>
                         <div>
@@ -34,7 +34,7 @@ export default function InputForm() {
                                 name="phone"
                                 type="text"
                                 className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                                placeholder="Enter your phone number"
+                                placeholder="Enter phone number"
                             />
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default function InputForm() {
                             type="button"
                             className="w-full py-3 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
                         >
-                            Create an account
+                            Save Contact
                         </button>
                     </div>
                 </form>

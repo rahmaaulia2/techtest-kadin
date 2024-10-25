@@ -7,7 +7,9 @@ export default function Users() {
     const [users, setUsers] = useState([])
 
     return (
+        <div>
         <div className="bg-white p-10 h-screen">
+        <h1 className="font-bold text-2xl text-black">Contact List</h1>
             <div className="font-sans overflow-x-auto">
                 <table className="min-w-full bg-white">
                     <thead className="bg-gray-100 whitespace-nowrap">
@@ -229,6 +231,7 @@ export default function Users() {
                     </tbody>
                 </table>
             </div>
+        </div>
         </div>
 
     )

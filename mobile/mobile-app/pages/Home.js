@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FlatList, StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import { FlatList, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import Ionicons from '@expo/vector-icons/Ionicons'
 
 export default function Home() {
@@ -24,9 +24,16 @@ export default function Home() {
     const [contacts, setContacts] = useState([])
 
     return (
+        <SafeAreaView
+        style={{
+            flex:1
+        }}
+        >
         <View
             style={{
-                marginHorizontal: 15
+                marginHorizontal: 15,
+                flex: 1,
+                justifyContent: "flex-start"
             }}
         >
             <View
@@ -93,10 +100,10 @@ export default function Home() {
                             }}
                             >
                                 <TouchableOpacity>
-                                    <Ionicons name="create" size={25} color={"blue"} />
+                                    <Ionicons name="create" size={25} color={"#4052d6"} />
                                 </TouchableOpacity>
                                 <TouchableOpacity>
-                                <Ionicons name="trash" size={25} color={"red"} />
+                                <Ionicons name="trash" size={25} color={"#d20a2e"} />
                                 </TouchableOpacity>
                             </View>
                         </View >
@@ -105,6 +112,7 @@ export default function Home() {
             >
             </FlatList>
         </View>
+        </SafeAreaView>
     )
 }
 

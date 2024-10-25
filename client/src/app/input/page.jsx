@@ -1,6 +1,11 @@
 import Link from "next/link";
 
 export default function InputForm() {
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [phoneNumber, setPhoneNumber] = useState("")
+    
     return (
         <div className="flex flex-col justify-center font-[sans-serif] sm:h-screen p-4 bg-white">
             <div className="max-w-md w-full mx-auto border border-gray-300 rounded-2xl p-8">

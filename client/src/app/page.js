@@ -12,8 +12,8 @@ export default function Users() {
       <div className="bg-white p-10 h-screen">
         <div className="flex justify-between my-5">
           <h1 className="font-bold text-2xl text-black">Contact List</h1>
-          <Link href={"/input"} className="bg-blue-700 p-4 rounded-md">
-            <p>Add New Contact</p>
+          <Link href={"/input"} className="bg-blue-600 p-4 rounded-md hover:bg-blue-800">
+            <p className="font-bold text-sm">Add New Contact</p>
           </Link>
 
         </div>
@@ -43,7 +43,7 @@ export default function Users() {
                     <td className="p-4 text-[15px] text-gray-800">{user.email}</td>
                     <td className="p-4 text-[15px] text-gray-800">{user.phoneNumber}</td>
                     <td className="p-4">
-                      <button className="mr-4" title="Edit">
+                      <Link href={"/edit"} className="mr-4" title="Edit">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="w-5 fill-blue-500 hover:fill-blue-700"
@@ -58,7 +58,7 @@ export default function Users() {
                             data-original="#000000"
                           />
                         </svg>
-                      </button>
+                      </Link>
                       <button className="mr-4" title="Delete">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

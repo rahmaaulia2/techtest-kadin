@@ -1,11 +1,16 @@
-import Link from "next/link";
+import { useState } from "react"
 
-export default function InputForm() {
+export default function EditForm() {
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [phoneNumber, setPhoneNumber] = useState("")
+
     return (
         <div className="flex flex-col justify-center font-[sans-serif] sm:h-screen p-4 bg-white">
             <div className="max-w-md w-full mx-auto border border-gray-300 rounded-2xl p-8">
                 <div className="flex mb-12 justify-center items-center">
-                    <img className="max-w-32" src="images.png"/>
+                    <img className="max-w-32" src="images.png" />
                 </div>
                 <h1 className="font-bold text-center text-xl my-5 text-black">Input Contact</h1>
                 <form>
